@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Exercício 05</string>
+    <string name="action_settings">Settings</string>
+    <string name="primeira_opcao">Primeira Opção</string>
+    <string name="segunda_opcao">Segunda Opção</string>
+    <string name="clique_aqui">Clique aqui</string>
+</resources>
