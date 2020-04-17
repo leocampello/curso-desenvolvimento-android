@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Exercício 06</string>
+    <string name="action_settings">Settings</string>
+    <string name="clique_aqui">Clique aqui</string>
+
+    <string-array name="spinner_values">
+        <item>Primeira Opção</item>
+        <item>Segunda Opção</item>
+        <item>Terceira Opção</item>
+        <item>Quarta Opção</item>
+    </string-array>
+
+</resources>
