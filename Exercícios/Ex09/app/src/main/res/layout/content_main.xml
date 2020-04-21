@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <!-- LinearLayout posiciona os elementos na ordem que aparece no arquivo XML.
+         Possui um atributo obrigatório android:orientation que pode assumir os valores: vertical ou  horizontal
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_pad"
+        android:paddingTop="@dimen/activity_vertical_pad"
+        android:paddingRight="@dimen/activity_horizontal_pad"
+        android:paddingBottom="@dimen/activity_vertical_pad">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A" />
+
+        <!-- O atributo android:layout_weight="1" modifica o tamanho da View em relação aos demais -->
+        <!-- O atributo android:gravity="top" altera o posicionamento do conteúdo da View (outros valores são possíveis) -->
+        <!-- O atributo android:layout_gravity="top" altera o posicionamento do próprio elemento (outros valores são possíveis) -->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:text="B" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="end"
+            android:text="C" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
