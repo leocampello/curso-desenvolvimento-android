@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_main"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_pad"
+        android:paddingTop="@dimen/activity_vertical_pad"
+        android:paddingRight="@dimen/activity_horizontal_pad"
+        android:paddingBottom="@dimen/activity_vertical_pad">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <!-- Outros atributos possíveis de utilizar
+            android:layout_alignParentBottom="true" __  Alinhamento no rodapé do parent (top, left, right, bottom)
+            android:layout_centerVertical="false"  __ Alinhamento na vertical do parent
+            android:layout_centerHorizontal="false"   __ Alinhamento na horizontal do parent
+        -->
+
+        <!-- Posicionamento do segundo botão em relação ao primeiro: embaixo, alinhado à direita -->
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/button1"
+            android:layout_below="@id/button1"/>
+
+        <!-- Outros atributos possíveis de utilizar
+            android:layout_toRightOf="@id/button1" __  Alinhamento à direita de algum elemento
+        -->
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
