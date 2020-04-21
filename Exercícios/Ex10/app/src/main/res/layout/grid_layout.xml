@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:paddingLeft="@dimen/activity_horizontal_pad"
+    android:paddingTop="@dimen/activity_vertical_pad"
+    android:paddingRight="@dimen/activity_horizontal_pad"
+    android:paddingBottom="@dimen/activity_vertical_pad">
+
+    <TextView
+        android:id="@+id/to_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:text="@string/to_label" />
+
+    <EditText
+        android:id="@+id/edit_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:ems="10"
+        android:hint="@string/to_hint"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:gravity="top"
+        android:hint="@string/message"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/send" />
+</GridLayout>
