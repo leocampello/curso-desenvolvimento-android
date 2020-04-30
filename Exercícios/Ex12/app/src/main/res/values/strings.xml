@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ListaContatos</string>
+    <string name="lbl_header">Lista de Contatos</string>
+    <string name="hint_nome">Nome...</string>
+    <string name="hint_tel">Telefone...</string>
+    <string name="btn_add">+ Adicionar</string>
+</resources>
